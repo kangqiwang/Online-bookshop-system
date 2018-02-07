@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <filter>
+  <filter-name>CharSetFilter</filter-name>
+  <filter-class>com.jzyqd.filter.CharSetFilter</filter-class>
+  <init-param>
+  	<param-name>charSet</param-name>
+  	<param-value>gbk</param-value>
+  </init-param>
+  <init-param>
+  	<param-name>ffff</param-name>
+  	<param-value>ffg</param-value>
+  </init-param>
+ </filter>
+ <filter-mapping>
+  <filter-name>CharSetFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+ </filter-mapping>
+ <servlet>
+  <servlet-name>FindAllEmployeeServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.employee.FindAllEmployeeServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>SaveEmployeeServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.employee.SaveEmployeeServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>FindByEmployeeIdServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.employee.FindByEmployeeIdServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UpdateEmployeeServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.employee.UpdateEmployeeServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>DeleteEmployeeServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.employee.DeleteEmployeeServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>InitIndexServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.qt.InitIndexServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowBookInfoServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.qt.ShowBookInfoServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>AddGwcItemServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.gwc.AddGwcItemServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>DeleteGwcItemServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.gwc.DeleteGwcItemServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UpdateGwcItemNumServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.gwc.UpdateGwcItemNumServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ClearGwcItemServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.gwc.ClearGwcItemServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>BackgroundLoginServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.sysAdmin.BackgroundLoginServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>BackgroundLoginOutServlet</servlet-name>
+  <servlet-class>com.jzyqd.servlet.sysAdmin.BackgroundLoginOutServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ShowBookListByTypeId</servlet-name>
+  <servlet-class>com.jzyqd.servlet.qt.ShowBookListByTypeId</servlet-class>
+ </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitOrderServlet</servlet-name>
+    <servlet-class>com.jzyqd.servlet.gwc.InitOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QTLoginServlet</servlet-name>
+    <servlet-class>com.jzyqd.servlet.gwc.QTLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MakeOrderServlet</servlet-name>
+    <servlet-class>com.jzyqd.servlet.gwc.MakeOrderServlet</servlet-class>
+  </servlet>
+
+
+
+ <servlet-mapping>
+  <servlet-name>FindAllEmployeeServlet</servlet-name>
+  <url-pattern>/FindAllEmployeeServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>SaveEmployeeServlet</servlet-name>
+  <url-pattern>/SaveEmployeeServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>FindByEmployeeIdServlet</servlet-name>
+  <url-pattern>/FindByEmployeeIdServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpdateEmployeeServlet</servlet-name>
+  <url-pattern>/UpdateEmployeeServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>DeleteEmployeeServlet</servlet-name>
+  <url-pattern>/DeleteEmployeeServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>InitIndexServlet</servlet-name>
+  <url-pattern>/InitIndexServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowBookInfoServlet</servlet-name>
+  <url-pattern>/ShowBookInfoServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>AddGwcItemServlet</servlet-name>
+  <url-pattern>/AddGwcItemServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>DeleteGwcItemServlet</servlet-name>
+  <url-pattern>/DeleteGwcItemServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpdateGwcItemNumServlet</servlet-name>
+  <url-pattern>/UpdateGwcItemNumServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ClearGwcItemServlet</servlet-name>
+  <url-pattern>/ClearGwcItemServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>BackgroundLoginServlet</servlet-name>
+  <url-pattern>/BackgroundLoginServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>BackgroundLoginOutServlet</servlet-name>
+  <url-pattern>/BackgroundLoginOutServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ShowBookListByTypeId</servlet-name>
+  <url-pattern>/ShowBookListByTypeId</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InitOrderServlet</servlet-name>
+    <url-pattern>/InitOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QTLoginServlet</servlet-name>
+    <url-pattern>/QTLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MakeOrderServlet</servlet-name>
+    <url-pattern>/MakeOrderServlet</url-pattern>
+  </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>InitIndexServlet</welcome-file>
+ </welcome-file-list>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>
